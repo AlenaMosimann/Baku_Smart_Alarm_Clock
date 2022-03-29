@@ -1,2 +1,2 @@
 print("Hello World!")
-return True
+print("This is a new line")
