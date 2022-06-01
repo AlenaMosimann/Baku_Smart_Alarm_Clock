@@ -5,57 +5,44 @@ root = Tk()
 root.title("Scrollbar")
 root.geometry("1800x1200")
 
-"""
-minute_listbox = Listbox(root)
-minute_listbox.pack()
-for min in range(5,60, 5):
-    minute_listbox.insert(END, min)
-# this makes the listbox scrollable (widgets can be made scrollable)
 
-minutes = Scrollbar(root, orient='vertical', command = minute_listbox.yview)
-minutes.pack(side = LEFT, fill = BOTH)
-
-minute_listbox.config(yscrollcommand = minutes.set)
-"""
-def min_show():
-    label.config(text = min_click.get())
-
-mins = [str(x) for x in range(5,60, 5)]
+# select minute
+mins = ["05"] + [str(x) for x in range(10,60, 5)]
 
 min_click = StringVar()
 min_click.set(30)
+min_get_up = min_click.get()
 
 min_drop = OptionMenu(root, min_click, *mins)
-min_drop.pack()
-
-button = Button(root, text="click", command = min_show)
-button.pack()
-
-label = Label( root , text = " " )
-label.pack()
+min_drop.grid(row=1, column=2)
 
 
 
-
-
-def hour_show():
-    h_label.config(text = hour_click.get())
-
-
-
-hours = [str(x) for x in range(1,24)]
+# select hour
+hours = ["01","02","03","04","05","06","07","08","09"] + [str(x) for x in range(10,25)]
+print(hours)
 
 hour_click = StringVar()
 hour_click.set(6)
+hour_get_up = hour_click.get()
+
+
 
 hour_drop = OptionMenu(root, hour_click, *hours)
-hour_drop.pack()
+hour_drop.grid(row=1, column=1)
 
-hour_button = Button(root, text="click hour", command = min_show)
-hour_button.pack()
 
-h_label = Label( root , text = " " )
-h_label.pack()
+
+
+def time_show():
+    label.config(text = f"{hour_click.get()}:{min_click.get()}")
+
+button = Button(root, text="click", command = time_show)
+button.grid(row=2, column=2)
+
+label = Label(root , text = " ")
+label.grid(row=3, column=2)
+
 
 
 root.mainloop()
