@@ -32,8 +32,6 @@ hour_drop = OptionMenu(root, hour_click, *hours)
 hour_drop.grid(row=1, column=1)
 
 
-
-
 def time_show():
     label.config(text = f"{hour_click.get()}:{min_click.get()}")
 
@@ -42,6 +40,15 @@ button.grid(row=2, column=2)
 
 label = Label(root , text = " ")
 label.grid(row=3, column=2)
+
+
+
+
+
+
+
+
+
 
 
 
