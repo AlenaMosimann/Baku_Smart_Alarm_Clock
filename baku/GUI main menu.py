@@ -9,11 +9,12 @@ root.geometry("1800x1200")
 # current_date = Label(root, text=)
 
 radius = 200
-angle = 10
+angle = 30
 oval_position_start = 100
 oval_position_end = 500
 x_origin = int((oval_position_start + oval_position_end)/2)
 y_origin = int((oval_position_start + oval_position_end)/2)
+print(x_origin, y_origin)
 
 
 canvas = Canvas(root, width=1800, height=1200)
@@ -22,8 +23,8 @@ canvas.pack()
 canvas.create_oval(oval_position_start, oval_position_start, oval_position_end, oval_position_end)
 
 def circle():
-    x = (radius * sin(radians(angle)))+100
-    y = (radius * cos(radians(angle)))+100
+    x = (radius*sin(angle)+radius)
+    y = ((radius*cos(angle)-radius)*-1)
     print(x, y)
     canvas.create_line(x_origin, x_origin, x, y)
     """
