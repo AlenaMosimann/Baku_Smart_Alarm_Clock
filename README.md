@@ -8,7 +8,7 @@ Matura thesis
 * [What are the benefits of the smart alarm clock?]
 * [Materials needed]
 * [Features]
-* [Screenshots]
+* [User Instructions]
 * [Setup]
 * [Project Status]
 * [Room for Improvement]
@@ -34,7 +34,7 @@ The smart alarm clock has multiple features
 - setting the alarm for a time period to check for light sleep (“range_alarm_time” mode)
 
 
-## Screenshots
+## User Instructions
 ![User instructions …](./Images/baku_user_instructions.png)
 
 
