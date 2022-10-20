@@ -22,7 +22,7 @@ The project was created in the context of a Matura thesis. I chose the topic of 
 
 
 ## Features
-The smart alarm clock has multiple features
+The smart alarm clock has several features ...
 - telling the current time
 - setting the alarm for a specific time (“set_alarm_time” mode)
 - setting the alarm for a time period to check for light sleep (“range_alarm_time” mode)
@@ -69,7 +69,7 @@ Project is: _complete_
 
 ## Room for Improvement
 Room for improvement:
-- Heart rate alongside movement sensors
+- Heart rate sensors alongside movement sensors
 - Bluetooth Low Energy (BLE) connection instead of a serial connection (cable)
 
 
