@@ -45,7 +45,7 @@ Wait ten seconds, then disconnect the micro:bit and attach it to your wrist.
 
 To exit the alarm mode, press the "Restart" button to clear the screen then press the "Clock" button. This will return you to the default screen (“start_frame”). 
 
-![User instructions …](./Images/baku_user_instructions.png)
+![User instructions …](./Images/tkinter_window.jpg)
 
 
 ## Setup
