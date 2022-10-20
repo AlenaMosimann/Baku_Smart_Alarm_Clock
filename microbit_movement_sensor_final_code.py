@@ -66,7 +66,7 @@ def on_data_received():
                 alarm_ringing()
                 clear_screen()
                 check_range_time_boundary = False
-            elif range_time_boundary == 30 * 60000:
+            elif range_time_boundary == 30 * 60:
                 alarm_ringing()
                 clear_screen()
                 check_range_time_boundary = False
