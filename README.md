@@ -7,6 +7,7 @@ Matura thesis
 ## Table of Contents
 * [What are the benefits of the smart alarm clock?]
 * [Materials needed]
+* [Modules to import]
 * [Features]
 * [User Instructions]
 * [Setup]
@@ -25,6 +26,14 @@ The project was created in the context of a Matura thesis. I chose the topic of 
 - 2x BBC micro:bit Version 2
 - USB micro-B plug
 - pressure sensor. Building instructions on: https://microbit.org/projects/make-it-code-it/pressure-switch-alarm/
+
+
+## Modules to import
+- tkinter
+- datetime
+- serial
+- time
+- PIL
 
 
 ## Features
