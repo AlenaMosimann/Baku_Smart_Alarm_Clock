@@ -35,7 +35,7 @@ The smart alarm clock has multiple features
 
 
 ## Screenshots
-![User instructions …](Baku_Smart_Alarm_Clock/Images/baku_user_instructions.png)
+![User instructions …](./Images/baku_user_instructions.png)
 
 
 ## Setup
