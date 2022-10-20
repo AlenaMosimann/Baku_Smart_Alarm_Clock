@@ -35,6 +35,16 @@ The smart alarm clock has multiple features
 
 
 ## User Instructions
+The first thing you will see after running the code is the "start_frame". This is the default screen that is displayed during the day. When you are ready to go to bed, click the "Alarm Time" button to switch to the "main_frame" where the alarm time is set. Select a specific time at which you want to be woken up or a range time in the combo boxes (highlighted in blue). First set the hour combo box on the left and then the minute combo box on the right.
+
+Next, to confirm the entry, press a button (highlighted in green). For both a time period and a specific time, you must specify whether you want to set the time for today or tomorrow. Due to this feature, you can take a nap during the day or get a full night's sleep. 
+
+If everything is done correctly, a label (highlighted in purple) should appear confirming that the alarm is set for the selected time.
+
+Wait ten seconds, then disconnect the micro:bit and attach it to your wrist.
+
+To exit the alarm mode, press the "Restart" button to clear the screen then press the "Clock" button. This will return you to the default screen (“start_frame”). 
+
 ![User instructions …](./Images/baku_user_instructions.png)
 
 
