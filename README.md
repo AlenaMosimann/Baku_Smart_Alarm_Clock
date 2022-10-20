@@ -6,11 +6,11 @@ Matura thesis
 
 ## Table of Contents
 * [What are the benefits of the smart alarm clock?]
-* [Materials needed]
-* [Modules to import]
 * [Features]
-* [User Instructions]
+* [Materials needed]
 * [Setup]
+* [User Instructions]
+* [Modules to import]
 * [Project Status]
 * [Room for Improvement]
 * [Contact]
@@ -21,6 +21,13 @@ Many people still feel drowsy even after a full night's sleep. This sleepiness i
 The project was created in the context of a Matura thesis. I chose the topic of "sleep" because most people know so little about it, even though we spend many hours doing it every day.
 
 
+## Features
+The smart alarm clock has multiple features
+- telling the current time
+- setting the alarm for a specific time (“set_alarm_time” mode)
+- setting the alarm for a time period to check for light sleep (“range_alarm_time” mode)
+
+
 ## Materials needed
 - Computer or a Raspberry Pi 3 Model B
 - 2x BBC micro:bit Version 2
@@ -28,19 +35,10 @@ The project was created in the context of a Matura thesis. I chose the topic of 
 - pressure sensor. Building instructions on: https://microbit.org/projects/make-it-code-it/pressure-switch-alarm/
 
 
-## Modules to import
-- tkinter
-- datetime
-- serial
-- time
-- PIL
+## Setup
+There are two micro:bit files: one for the micro:bit pressure sensor and one for the micro:bit motion sensor. Flash the code from the Computer or Raspberry Pi onto the respective micro:bits.
 
-
-## Features
-The smart alarm clock has multiple features
-- telling the current time
-- setting the alarm for a specific time (“set_alarm_time” mode)
-- setting the alarm for a time period to check for light sleep (“range_alarm_time” mode)
+When the Tkinter code is run (constants file and main file) on the computer or Raspberry Pi, the micro:bit must be connected via micro-USB. However, once a time has been selected and confirmed with a button, the cable can be removed. 
 
 
 ## User Instructions
@@ -57,10 +55,12 @@ To exit the alarm mode, press the "Restart" button to clear the screen then pres
 ![User instructions …](./Images/tkinter_window.jpg)
 
 
-## Setup
-There are two micro:bit files: one for the micro:bit pressure sensor and one for the micro:bit motion sensor. Flash the code from the Computer or Raspberry Pi onto the respective micro:bits.
-
-When the Tkinter code is run (constants file and main file) on the computer or Raspberry Pi, the micro:bit must be connected via micro-USB. However, once a time has been selected and confirmed with a button, the cable can be removed. 
+## Modules to import
+- tkinter
+- datetime
+- serial
+- time
+- PIL
 
 
 ## Project Status
